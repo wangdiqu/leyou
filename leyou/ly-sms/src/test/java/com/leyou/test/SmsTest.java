@@ -18,7 +18,7 @@ public class SmsTest {
     @Test
     public void testSend() throws InterruptedException {
         Map<String,String> msg=new HashMap<>();
-        msg.put("phone","18622880247");
+        msg.put("phone","18623180247");
         msg.put("code","654321");
         template.convertAndSend("ly.sms.exchange","sms.verify.code",msg);
             Thread.sleep(10000L);
