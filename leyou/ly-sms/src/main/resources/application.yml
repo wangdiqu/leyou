@@ -14,5 +14,5 @@ ly:
   sms:
     accessKeyId:  #填写自己的
     accessKeySecret:  #填写自己的
-    signName: 乐优商城
-    verifyCodeTemplate: SMS_205121189
+    signName: 商城
+    verifyCodeTemplate: #填写自己的
