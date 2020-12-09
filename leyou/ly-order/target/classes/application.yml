@@ -1,0 +1,36 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: order-service
+  datasource: #数据库连接
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yun6?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: sa1234
+  jackson:
+    default-property-inclusion: non_null #数据为空""时,为null
+eureka:
+  instance:
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+  client:
+    eureka-server-connect-timeout-seconds: 10 #微服务超时时间短
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka #eureka
+mybatis:
+  type-aliases-package: com.leyou.order.pojo #别名扫描包
+leyou:
+  jwt:
+    pubKeyPath:  C:\\tmp\\rsa\\rsa.pub # 公钥地址
+    cookieName: LY_TOKEN # cookie的名称
+  worker:
+    workerId: 1  #当前机器id
+    dataCenterId: 1  #序列号
+  pay:
+    appID: wx8397f8696b538317
+    mchID: 1473426802
+    key: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb
+    httpConnectTimeoutMs: 1000
+    httpReadTimeoutMs: 8000
+    notifyUrl: http://bwvr6z.natappfree.cc/wxpay/notify
