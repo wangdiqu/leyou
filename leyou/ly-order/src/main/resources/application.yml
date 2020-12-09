@@ -28,9 +28,9 @@ leyou:
     workerId: 1  #当前机器id
     dataCenterId: 1  #序列号
   pay:
-    appID: wx8397f8696b538317
-    mchID: 1473426802
-    key: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb
+    appID: #填写自己的
+    mchID: #填写自己的
+    key: #填写自己的
     httpConnectTimeoutMs: 1000
     httpReadTimeoutMs: 8000
     notifyUrl: http://bwvr6z.natappfree.cc/wxpay/notify
